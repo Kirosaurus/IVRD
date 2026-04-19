@@ -1,0 +1,118 @@
+.container {
+    background: linear-gradient(-31deg, #545454 0%, #25343F 100%);
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-image: url("/checkboardDashboard.jpg");
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 800;
+    width: 327px;
+    height: 100vh;
+    background: linear-gradient(180deg, #25343F 0%, #FF9B51 100%);
+    border-radius: 0px 60px 60px 0px;
+    box-shadow: 6px 4px 26px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+.overlay {
+    inset: 0;
+    z-index: 0;
+    position: absolute;
+    mix-blend-mode: multiply;
+    transform: rotate(5.65deg) translate(-50px);
+}
+
+.facebookName {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 13px
+}
+
+.bottom {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 49px;
+    z-index: 3;
+    bottom: 20px;
+}
+
+.copyrightSign {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.navbar {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 29px;
+}
+
+.navbar,
+.navList {
+    position: relative;
+    z-index: 2;
+}
+
+.listNavbar {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.icons {
+    width: 292px;
+    height: 52px;
+    padding: 11px 0 11px 29px;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    transition: transform 180ms ease;
+}
+
+.icons:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.iconsActive {
+    color: #25343F;
+    background-color: white;
+    width: 292px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 29px;
+    border-radius: 15px;
+    list-style: none;
+    gap: 20px;
+    transition: transform 180ms ease;
+}
+
+.iconsActive:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.selectedPage {
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 292px;
+    height: 52px;
+    z-index: 0;
+}
