@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Nexa';
+    src: url('/fonts/nexa/Nexa-ExtraLight.ttf') format('truetype');
+    font-weight: 200; 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nexa';
+    src: url('/fonts/nexa/Nexa-Heavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+.mainDashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex: 1;
+    padding: 30px 54px 54px 54px;
+    z-index: 1;
+
+    height: 100vh;
+    overflow-y: auto;
+    scroll-behavior: smooth; 
+}
+
+h1{
+    font-family: 'Nexa';
+    font-weight: 700;
+    font-size: 46px;
+}
+
+h2{
+    font-family: 'Nexa';
+    font-weight: 700;
+    font-size: 32px;
+    background: linear-gradient(90deg, #FF9B51, #FFAA6B);
+    background-clip: text;
+    color: transparent;
+}
+
+.announce{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    max-width: 100%;
+    min-height: 473px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.listProduct{
+    display: flex;
+    gap: 34px;
+}
+
+.product{
+    background : linear-gradient(225deg, #78838B, #C07944);
+    padding: 15px;
+    width: 335px;
+    height: 363px;
+    border-radius: 30px;
+}
+
+.thumbnailProduct{
+    background-color: white;
+    width: 305px;
+    height: 171px;
+    border-radius: 20px;
+}
+
+.sidebarButton{
+    width: 50px;
+    height: 50px;
+    background : white;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.1s ease, background-color 100ms ease;
+}
+
+.sidebarButton:hover {
+    transform: scale(1.05);
+    background-color: #f0f0f0;
+}
+
+.sidebarButton:active {
+    transform: scale(0.9);
+    background-color: #f0f0f0;
+}

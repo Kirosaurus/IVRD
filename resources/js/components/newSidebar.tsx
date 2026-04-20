@@ -1,5 +1,5 @@
 import { Link, usePage } from '@inertiajs/react';
-import styles from '../../css/page.module.css';
+import styles from '../../css/sidebar.module.css';
 
 export default function Sidebar() {
     const { url } = usePage();
@@ -9,10 +9,8 @@ export default function Sidebar() {
             <img
                 src={"/checkboardDashboard.jpg"}
                 alt="checkboard"
-                height={1000}
-                width={500}
                 className={styles.overlay}
-                style={{ objectFit: 'cover' }}
+                // style={{ objectFit: 'cover' }}
             />
             <nav className={styles.navList}>
                 <div className={styles.navbar}>
@@ -41,36 +39,36 @@ export default function Sidebar() {
                             />
                             Payware
                         </Link>
-                        <Link href="/Freeware" className={url === "/Freeware" ? styles.iconsActive : styles.icons}>
+                        <Link href="/freeware" className={url === "/freeware" ? styles.iconsActive : styles.icons}>
                             <img
-                                src={url === "/Freeware" ? "/freewareBlack_icon.svg" : "/freewareWhite_icon.svg"}
+                                src={url === "/freeware" ? "/freewareBlack_icon.svg" : "/freewareWhite_icon.svg"}
                                 alt="Freeware Icon"
                                 width={30}
                                 height={30}
                             />
                             Freeware
                         </Link>
-                        <Link href="/Terms&Condition" className={url === "/Terms&Condition" ? styles.iconsActive : styles.icons}>
+                        <Link href="/terms&condition" className={url === "/terms&condition" ? styles.iconsActive : styles.icons}>
                             <img
-                                src={url === "/Terms&Condition" ? "/tncBlack_icon.svg" : "/tncWhite_icon.svg"}
+                                src={url === "/terms&condition" ? "/tncBlack_icon.svg" : "/tncWhite_icon.svg"}
                                 alt="T&C Icon"
                                 width={28}
                                 height={30}
                             />
                             Terms & Condition
                         </Link>
-                        <Link href="/Contact" className={url === "/Contact" ? styles.iconsActive : styles.icons}>
+                        <Link href="/contact" className={url === "/contact" ? styles.iconsActive : styles.icons}>
                             <img
-                                src={url === "/Contact" ? "/contactBlack_icon.svg" : "/contactWhite_icon.svg"}
+                                src={url === "/contact" ? "/contactBlack_icon.svg" : "/contactWhite_icon.svg"}
                                 alt="Contact Icon"
                                 width={28}
                                 height={28}
                             />
                             Contact
                         </Link>
-                        <Link href="/How2Order" className={url === "/How2Order" ? styles.iconsActive : styles.icons}>
+                        <Link href="/how2order" className={url === "/how2order" ? styles.iconsActive : styles.icons}>
                             <img
-                                src={url === "/How2Order" ? "/h2oBlack_icon.svg" : "/h2oWhite_icon.svg"}
+                                src={url === "/how2order" ? "/h2oBlack_icon.svg" : "/h2oWhite_icon.svg"}
                                 alt="H2O Icon"
                                 width={28}
                                 height={30}
@@ -84,7 +82,7 @@ export default function Sidebar() {
                                 width={30}
                                 height={30}
                             />
-                            Freeware
+                            FAQ
                         </Link>
                     </ul>
                 </div>

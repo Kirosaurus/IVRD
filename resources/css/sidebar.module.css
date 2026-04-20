@@ -16,11 +16,11 @@
     background: linear-gradient(-31deg, #545454 0%, #25343F 100%);
     display: flex;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .sidebar {
     font-family: 'Nexa', sans-serif;
-    background-image: url("../../public/checkboardDashboard.jpg");
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -36,11 +36,13 @@
 }
 
 .overlay {
+    rotate: 90deg;
     inset: 0;
     z-index: 0;
     position: absolute;
     mix-blend-mode: multiply;
     transform: rotate(5.65deg) translate(-50px);
+    scale: 8; 
 }
 
 .facebookName {
@@ -102,6 +104,10 @@
     transform: scale(1.05);
 }
 
+.icons:active {
+    transform: scale(0.9);
+}
+
 .iconsActive {
     color: #25343F;
     background-color: white;
@@ -119,6 +125,12 @@
 .iconsActive:hover {
     cursor: pointer;
     transform: scale(1.05);
+}
+
+.iconsActive:active{
+    transform : scale(0.9);
+    background: #FF9B51;
+    transition: 0.1s ease-in-out;
 }
 
 .selectedPage {

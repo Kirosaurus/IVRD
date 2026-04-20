@@ -1,4 +1,4 @@
-export default function Payware() {
+export default function Contact() {
     return (
         <div>
             
