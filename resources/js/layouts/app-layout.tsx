@@ -1,16 +1,17 @@
-import AppLayoutTemplate from '@/layouts/app/app-sidebar-layout';
 import type { BreadcrumbItem } from '@/types';
+import Sidebar from '@/components/newSidebar';
+
 
 export default function AppLayout({
-    breadcrumbs = [],
     children,
 }: {
     breadcrumbs?: BreadcrumbItem[];
     children: React.ReactNode;
 }) {
     return (
-        <AppLayoutTemplate breadcrumbs={breadcrumbs}>
+        <main className="min-h-screen bg-white">
+            <Sidebar></Sidebar>
             {children}
-        </AppLayoutTemplate>
+        </main>
     );
 }
